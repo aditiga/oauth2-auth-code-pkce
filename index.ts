@@ -296,7 +296,7 @@ export class OAuth2AuthCodePKCE {
       + `scope=${encodeURIComponent(scopes.join(' '))}&`
       + `state=${stateQueryParam}&`
       + `code_challenge=${encodeURIComponent(codeChallenge)}&`
-      + `code_challenge_method=S256`;
+      + `t_m=S256`;
 
     location.replace(url);
   }
